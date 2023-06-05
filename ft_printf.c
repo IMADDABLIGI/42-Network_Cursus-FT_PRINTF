@@ -6,7 +6,7 @@
 /*   By: idabligi <idabligi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 20:03:51 by idabligi          #+#    #+#             */
-/*   Updated: 2022/11/20 19:59:27 by idabligi         ###   ########.fr       */
+/*   Updated: 2022/11/20 12:55:59 by idabligi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,6 @@ static int	ft_cut(va_list ptr, const char c)
 		i += printf_hex(va_arg(ptr, unsigned int), c);
 	else if (c == '%')
 		i += ft_putchar('%');
-	// else
-	// 	i += ft_putchar(c);
 	return (i);
 }
 
